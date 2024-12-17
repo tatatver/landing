@@ -8,6 +8,7 @@
     text-decoration: none;
     font-family: 'TT Hoves', sans-serif;
     color: #222222;
+    /* outline: 2px solid red; */
 }
 section{
     padding: 0 calc(22.7vw - 61.265px) /*229-24*/calc(11.1vw + 18.4px) /*160-60*/ calc(10.6vw - 15.8px)/*121-24*/;
@@ -208,36 +209,34 @@ h3{
     margin-right: calc(8vw - 6.947px); /*95-23*/
 }
 
+
 .titleBox{
     width: calc(55.3vw + 120.035px);/*828-328*/
     margin-bottom: calc(1.1vw + 15.841px);/*30-20*/
-
 }
 .studentBox{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px 0;
-    align-items: center;
-}
-.boxPic{
-    flex-basis: 570px;
-    flex-grow: 1;
-    left: 61px;
+    display: grid;
+    grid-template-columns: 579px 520px;
 }
 .boxPic img{
-    /* width: calc(19.1vw + 334.044px); 579-406 */
-    width: 100%;
-
+    width: 100%
 }
 .infoBox{
-    flex-basis: 470px;
-    flex-grow: 2;
+    align-self: center;
 }
 .infoBox p{
     width: calc(21.2vw + 248.142px); /*520-328*/
     font-size: calc(0.3vw + 16.752px); /*21-18*/
     margin-bottom: calc(0.6vw + 19.92px); /*25-20*/
- 
+}
+@media (max-width: 900px){
+    .studentBox{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 0;
+        justify-content: center;
+    }
+
 }
 
 
