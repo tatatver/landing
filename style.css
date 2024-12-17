@@ -36,14 +36,14 @@ section{
 .subTitle{
     font-size: calc(0.6vw + 14px); /*21-16*/
     line-height: 140%;
-    /* font-weight: 700; */
+    font-weight: 700;
 }
 h1{
     font-size: calc(4.2vw + 26.3px);/*80-42*/
     line-height: 110%;
     font-family: 'Chava', 'sans-serif';
     margin-bottom: calc(2.2vw + 11.681px); /*40-20*/
-    /* font-weight: 400; */
+    font-weight: 400;
 }
 .infoText{
     font-size: calc(1vw + 14.257px);  /*27-18*/
@@ -64,7 +64,7 @@ h1{
     background-color: #6E3ABA;
     padding: 20px 0;
     border-radius: 12px;
-    /* font-weight: 500; */
+    font-weight: 500;
     font-size: 18px;
     cursor: pointer;
     margin-right: calc(3.3vw - 12.478px); /*30-0*/
@@ -76,7 +76,7 @@ h1{
     background-color: #fff;
     padding: 20px 0;
     border-radius: 12px;
-    /* font-weight: 500; */
+    font-weight: 500;
     font-size: 18px;
     cursor: pointer;
 }
@@ -88,13 +88,14 @@ h1{
 }
 h2{
     margin-bottom: calc(5.5vw + 19.204px); /*90-40*/
-    /* font-weight: 500; */
+    font-weight: 500;
     font-size: calc(2.7vw + 24px); /*58-34*/
     line-height: 117.8%;
+    text-transform: uppercase;
 }
 .ifYouWrapper{
     display: flex;
-    gap: 40px 0;
+    gap: 40px 10px;
     flex-wrap: wrap;
     margin-bottom: 52px; /*54-40*/
 }
@@ -104,20 +105,20 @@ h2{
     margin-right: 30px;
 }
 h3{
-    /* font-weight: 600; */
+    font-weight: 600;
     font-size: calc(1vw + 14.257px);    
     line-height: calc(1.4vw + 19.959px);
     margin-bottom: calc(1.1vw + 5.841px); /*20-10*/
 }
 .newProg{
     width: calc(-1.1vw + 332.159px); /*318-328*/
-    /* font-weight: 600; */
+    font-weight: 600;
     font-size: calc(1vw + 14.257px);  /*27-18*/
     line-height: calc(1.4vw + 19.959px); /*37.8-25.2*/
     margin-bottom: calc(1.1vw + 5.841px); /*20-10*/
 }
 .infoMem{
-    /* font-weight: 400; */
+    font-weight: 400;
     font-size: calc(1vw + 14.257px);  /*27-18*/   
     line-height: calc(1.4vw + 19.959px); /*37.8-25.2*/
 }
@@ -141,4 +142,110 @@ h3{
 .ContentCard p{
     font-size: calc(1vw + 14.257px);  /*27-18*/
 }
+
+.border{
+    border: 2px solid;
+    padding: calc(3.8vw + 9.858px)/*58-24*/ calc(3.9vw + 5.44px) /*55-20*/ calc(1.3vw + 18px)/*32-23*/;
+    position: relative; /*указываем точку отсчета расположения кнопки*/
+}
+.corner{
+    position: absolute; /*указываем координаты размещения кнопки*/
+    top: calc(-0.1vw - 1.292px);/*-2- -1.5*/
+    right: calc(-0.4vw - 1.336px); /*-7 - -3*/
+    width: calc(9.5vw - 1.77px); /*120-34*/
+    height: calc(9.5vw - 1.77px); /*120-34*/
+}
+.programmCourse{
+    margin-bottom: calc(1.8vw + 17.3px);/*40-24*/
+}
+.border ul li{
+    border-bottom: 1px solid black;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    font-size: calc(0.6vw + 14px); /*21-16*/
+}
+.border ul li:last-child{
+    margin-bottom: 0;
+}
+.border .primary{
+    display: block;
+    margin: 0 auto;
+}
+.primary.desc,
+.primary.mob{
+    display: block;
+    margin: 0 auto;
+    margin-top: 34px;
+}
+.primary.mob{
+    display: none;
+}
+@media (max-width: 875px){
+    .primary.desc{
+        display: none;
+    }
+    .primary.mob{
+        display: block;
+    }
+}
+
+.info_wage h2{
+    width: calc(44.4vw + 161.212px); /*729-328*/
+    margin-right: calc(45.1vw - 145.991px); /*431-23.5*/
+    margin-bottom: calc(2.2vw + 11.681px); /*40-20*/
+}
+.info_wage p{
+    font-size: calc(1vw + 14.257px);  /*27-18*/
+    font-weight: 400;
+    line-height: 140%;
+    margin-right: calc(28.7vw - 84.434px); /*283-23.5*/
+    margin-bottom: calc(1.8vw + 13.345px); /*36-20*/
+    width: calc(60.6vw + 100.071px); /*876-328*/
+}
+.info_wage img{
+    width: calc(81.5vw + 21.46px); /*1065-328*/
+    /* margin-bottom: calc(11.1vw + 18.407px); 160-60 */
+    margin-right: calc(8vw - 6.947px); /*95-23*/
+}
+
+.titleBox{
+    width: calc(55.3vw + 120.035px);/*828-328*/
+    margin-bottom: calc(1.1vw + 15.841px);/*30-20*/
+
+}
+.studentBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 0;
+    align-items: center;
+}
+.boxPic{
+    flex-basis: 570px;
+    flex-grow: 1;
+    left: 61px;
+}
+.boxPic img{
+    /* width: calc(19.1vw + 334.044px); 579-406 */
+    width: 100%;
+
+}
+.infoBox{
+    flex-basis: 470px;
+    flex-grow: 2;
+}
+.infoBox p{
+    width: calc(21.2vw + 248.142px); /*520-328*/
+    font-size: calc(0.3vw + 16.752px); /*21-18*/
+    margin-bottom: calc(0.6vw + 19.92px); /*25-20*/
+ 
+}
+
+
+
+
+
+
+
+
+
 
