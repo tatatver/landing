@@ -84,6 +84,7 @@ h1 {
   cursor: pointer;
 }
 
+/*ЭТОТ КУРС ДЛЯ ТЕБЯ, ЕСЛИ ТЫ..*/
 .memoji {
   width: calc(3.3vw + 167.522px); /*210-180*/
   margin-bottom: 10px;
@@ -135,6 +136,7 @@ h3 {
   }
 }
 
+/*За 2 месяца ты станешь полноценным верстальщиком*/
 .contentTitle {
   width: calc(76.8vw + 39.3px); /*1022-328*/
 }
@@ -158,6 +160,7 @@ h3 {
   font-size: calc(1vw + 14.257px); /*27-18*/
 }
 
+/*программа курса:*/
 .border {
   border: 2px solid;
   padding: calc(3.8vw + 9.858px) /*58-24*/ calc(3.9vw + 5.44px) /*55-20*/
@@ -166,8 +169,8 @@ h3 {
 }
 .corner {
   position: absolute; /*указываем координаты размещения кнопки*/
-  top: calc(-0.1vw - 1.292px); /*-2- -1.5*/
-  right: calc(-0.4vw - 1.336px); /*-7 - -3*/
+  top: calc(-0.2vw - 1.292px); /*-2- -1.5*/
+  right: calc(-0.6vw - 1.336px); /*-7 - -3*/
   width: calc(9.5vw - 1.77px); /*120-34*/
   height: calc(9.5vw - 1.77px); /*120-34*/
 }
@@ -205,6 +208,7 @@ h3 {
   }
 }
 
+/*Сколько может зарабатывать Веб-Верстальщик?*/
 .info_wage h2 {
   width: calc(44.4vw + 161.212px); /*729-328*/
   margin-right: calc(45.1vw - 145.991px); /*431-23.5*/
@@ -224,6 +228,7 @@ h3 {
   margin-right: calc(8vw - 6.947px); /*95-23*/
 }
 
+/*Кроме этого тебя ждут:*/
 .titleBox {
   width: calc(55.3vw + 120.035px); /*828-328*/
   margin-bottom: calc(1.1vw + 15.841px); /*30-20*/
@@ -252,6 +257,7 @@ h3 {
   }
 }
 
+/*а кто преподает?*/
 .legendText {
   margin-bottom: calc(5.5vw + 19px);
 }
@@ -259,22 +265,26 @@ h3 {
   display: flex;
   gap: 20px 51px;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  /* width: 1220px; */
+}
+@media (max-width: 900px){
+  .legendWrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .legend {
   flex-basis: 400px;
   flex-grow: 1;
   width: calc(7.7vw + 300px );
 }
-/* .legend img {
-  width: calc(7.7vw + 300px); 399-329
-} */
 .legendInfo {
   flex-grow: 1000;
 }
 .legendInfo h3 {
   font-size: calc(1.1vw + 33px); /*48-38*/
-  margin-bottom: calc(1.1vw + 6px); /*20-10*/
+  margin-bottom: calc(1.1vw + 5.8px); /*20-10*/
 }
 .legendInfo span {
   display: block;
@@ -303,7 +313,6 @@ h3 {
 .card:nth-child(4) {
   grid-area: keyboard;
 }
-
 .card p {
   /* width: 250px; */
   font-size: calc(0.6vw + 14px); /*21-16*/
@@ -336,6 +345,7 @@ h3 {
   }
 }
 
+/*диплом об окончании курса*/
 .diplomGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -383,6 +393,7 @@ h3 {
   }
 }
 
+/*таймер:*/
 .saleTimer {
   background-color: #6e3aba;
   display: flex;
@@ -390,6 +401,8 @@ h3 {
   align-items: center;
   padding: calc(4.4vw + 23.363px) /*80-40*/ 0 calc(4.4vw + 23.363px) /*80-40*/;
   gap: calc(4vw + 4.6px);
+  margin-bottom: calc(11.1vw + 18.407px); /*160-60*/
+  /* width: calc(101.1vw - 1.416px); */
 }
 .saleTitel {
   font-size: calc(2vw + 26.513px); /*52-34*/
@@ -397,6 +410,8 @@ h3 {
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
+  line-height: calc(2.3vw + 31.232px);/*61.25-40.05*/
+  width: calc(37.8vw + 187.752px); /*672-330*/
 }
 .saleTimeContainer {
   display: flex;
@@ -413,3 +428,10 @@ h3 {
 .saleTimerCards span {
   font-size: calc(1.9vw + 2.929px); /*27-10*/
 }
+
+
+
+
+
+
+
