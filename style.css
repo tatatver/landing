@@ -257,6 +257,72 @@ h3 {
   }
 }
 
+/*Отзывы наших студентов*/
+.feedbackTitle{
+ margin-bottom:  calc(2.2vw + 11.681px);/*40-20*/
+}
+.feedbackCard{
+  width: 335px !important;
+  /* overflow: visible; Убедитесь, что содержимое не скрывается */
+  padding: 50px 20px !important;
+  background-color: #F0F7FD;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.feedbackCard img:nth-child(1){
+  margin-bottom: 12px;
+}
+.feedbackCard div p{
+  font-size: 21px;
+  line-height: 29.4px;
+  /* margin-bottom: 40px; */
+}
+.feedbackUser{
+  display: flex;
+  align-items:center;
+  gap: 0 15px;
+  margin-top: 10px;
+}
+.feedbackUser img{
+  border-radius: 50%;
+}
+.feedbackUser h3{
+  width: 169px;
+  font-weight: 400;
+  line-height: 28px; /*29.4-27*/
+  font-size: calc(0.3vw + 16.752px); /*21-18*/
+}
+
+/* Все еще сомневаешься? */
+.finishingTitle{
+  font-size: calc(2.7vw + 24px); /*58-34*/
+  width: calc(58.3vw + 108.8px); /*855-328*/
+  margin-bottom: 16px;
+  line-height: calc(2.3vw + 31.232px); /*61.25-40.05*/
+}
+.finishingInfo{
+font-size: calc(1vw + 14.257px); /*27-18*/
+width: calc(46.5vw + 153px); /*723-328*/
+margin-bottom: 20px;
+}
+.finishingCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.finishingCard img{
+  width: 507px;
+}
+.finishing .splide__list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden; /* Обрезает содержимое за пределами контейнера */
+  gap: 40px; /* Установите отступ между слайдами */
+}
+
 /*а кто преподает?*/
 .legendText {
   margin-bottom: calc(5.5vw + 19px);
