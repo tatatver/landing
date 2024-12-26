@@ -105,30 +105,6 @@
       <button class="secondary">Воспользоваться скидкой</button>
     </section>
 
-    <!-- таймер -->
-    <section class="saleTimer" id="timerSecond">
-      <h3 class="saleTitel">10% скидка действует</h3>
-      <div class="saleTimeContainer">
-        <div class="saleTimerCards">
-          <h4 class="time">00</h4>
-          <span>дней</span>
-        </div>
-        <div class="saleTimerCards">
-          <h4 class="time">00</h4>
-          <span>часов</span>
-        </div>
-        <div class="saleTimerCards">
-          <h4 class="time">00</h4>
-          <span>минут</span>
-        </div>
-        <div class="saleTimerCards">
-          <h4 class="time">00</h4>
-          <span>секунд</span>
-        </div>
-      </div>
-      <button class="secondary">Воспользоваться скидкой</button>
-    </section>
-
     <!--а кто преподает? -->
     <section>
       <h2 class="legendText">А кто преподает?</h2>
@@ -319,24 +295,55 @@
         </ul>
       </div>
     </section>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var splide = new Splide(".splide.feedback", {
-          perPage: 3,
-          rewind: true,
-          arrows: false,
-          // autoWidth: true,
-          // overflow: true,
-          gap: "30px",
-          breakpoints: {
-            900: {
-              perPage: 1,
-            },
-          },
-        });
-        splide.mount();
-      });
-    </script>
+
+
+    <!-- таймер -->
+    <section class="saleTimer" id="timerSecond">
+      <h3 class="saleTitel">10% скидка действует</h3>
+      <div class="saleTimeContainer">
+        <div class="saleTimerCards">
+          <h4 class="time">00</h4>
+          <span>дней</span>
+        </div>
+        <div class="saleTimerCards">
+          <h4 class="time">00</h4>
+          <span>часов</span>
+        </div>
+        <div class="saleTimerCards">
+          <h4 class="time">00</h4>
+          <span>минут</span>
+        </div>
+        <div class="saleTimerCards">
+          <h4 class="time">00</h4>
+          <span>секунд</span>
+        </div>
+      </div>
+      <button class="secondary">Воспользоваться скидкой</button>
+    </section>
+
+<!-- Немного о нас -->
+<section>
+  <h2 class="aboutUsTitle">Немного о нас</h2>
+  <div class="aboutUsWrapper">
+    <div class="aboutUsInfo">
+      <img src="./img/Icon_winning_cup.svg" alt="" />
+      <h3>
+        Резиденты IT-парка и одна из самых успешных DIGITAL-школ в
+        Узбекистане
+      </h3>
+    </div>
+    <div class="aboutUsCard">
+      <div class="aboutUsCardInfo">
+        <h4> > 2500</h4>
+        <p>выпускников</p>
+      </div>
+      <div class="aboutUsCardInfo">
+        <h4>10 направлений </h4>
+        <p>обучения в сфере Digital</p>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Все еще сомневаешься?  -->
       <section class="splide finishing" aria-labelledby="carousel-heading">
@@ -366,22 +373,7 @@
           </ul>
         </div>
     </section>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var splide = new Splide(".splide.finishing", {
-          perPage: 5,
-          rewind: true,
-          arrows: false,
-          gap: "26px",
-          breakpoints: {
-            900: {
-              perPage: 1,
-            },
-          },
-        });
-        splide.mount();
-      });
-    </script>
+    
 
     <footer>
       <div class="footerLeft">
@@ -410,7 +402,7 @@
           <form action="">
             <input type="text" placeholder="Имя" />
             <input type="text" placeholder="Фамилия" />
-            <input type="text" placeholder="(__) ____  __  __" />
+            <input type="text" placeholder="+998 (__) ____  __  __" />
             <button class="primary">Записаться на курс</button>
             <span>Остались вопросы?</span>
             <p>
@@ -424,6 +416,43 @@
     </footer>
 
     <script src="./splide-4.1.3/splide-4.1.3/dist/js/splide.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide(".splide.feedback", {
+          perPage: 3,
+          rewind: true,
+          arrows: false,
+          // autoWidth: true,
+          // overflow: true,
+          gap: "30px",
+          breakpoints: {
+            900: {
+              perPage: 1,
+            },
+          },
+        });
+        splide.mount();
+      });
+    </script>
+     
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var splide = new Splide(".splide.finishing", {
+      perPage: 2,
+      rewind: true,
+      arrows: false,
+      autoPlay:true,
+      delay:2000,
+      gap: 20,
+      breakpoints: {
+        900: {
+          perPage: 1,
+        },
+      },
+    });
+    splide.mount();
+  });
+  </script>
     <script src="./main.js"></script>
   </body>
 </html>

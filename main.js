@@ -24,3 +24,5 @@ setInterval(function () {  /*вызов функции каждую секунд
 }, 1000);
 
 startTimes();
+
+

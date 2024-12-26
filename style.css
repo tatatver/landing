@@ -122,19 +122,7 @@ h3 {
   font-size: calc(1vw + 14.257px); /*27-18*/
   line-height: calc(1.4vw + 19.959px); /*37.8-25.2*/
 }
-@media (max-width: 900px) {
-  .forYouWrapper {
-    grid-template: 1fr / 1fr;
-  }
-}
-@media (max-width: 875px) {
-  .primary.desc {
-    display: none;
-  }
-  .primary.mob {
-    display: block;
-  }
-}
+
 
 /*За 2 месяца ты станешь полноценным верстальщиком*/
 .contentTitle {
@@ -199,14 +187,7 @@ h3 {
 .primary.mob {
   display: none;
 }
-@media (max-width: 875px) {
-  .primary.desc {
-    display: none;
-  }
-  .primary.mob {
-    display: block;
-  }
-}
+
 
 /*Сколько может зарабатывать Веб-Верстальщик?*/
 .info_wage h2 {
@@ -248,80 +229,113 @@ h3 {
   font-size: calc(0.3vw + 16.752px); /*21-18*/
   margin-bottom: calc(0.6vw + 19.92px); /*25-20*/
 }
-@media (max-width: 900px) {
-  .studentBox {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px 0;
-    justify-content: center;
-  }
-}
+
 
 /*Отзывы наших студентов*/
-.feedbackTitle{
- margin-bottom:  calc(2.2vw + 11.681px);/*40-20*/
+.feedbackTitle {
+  margin-bottom: calc(2.2vw + 11.681px); /*40-20*/
 }
-.feedbackCard{
-  width: 335px !important;
+.feedbackCard {
+  /* width: 100% !important; */
+  /* height: 484px !important; */
   /* overflow: visible; Убедитесь, что содержимое не скрывается */
-  padding: 50px 20px !important;
-  background-color: #F0F7FD;
+  padding: 30px;
+  background-color: #f0f7fd;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
-.feedbackCard img:nth-child(1){
+.feedbackCard img:nth-child(1) {
   margin-bottom: 12px;
 }
-.feedbackCard div p{
+.feedbackUser img:nth-last-child() {
+  margin-bottom: 40px;
+}
+.feedbackCard div p {
   font-size: 21px;
-  line-height: 29.4px;
   /* margin-bottom: 40px; */
 }
-.feedbackUser{
+.feedbackUser {
   display: flex;
-  align-items:center;
+  align-items: center;
   gap: 0 15px;
-  margin-top: 10px;
+  margin-top: 40px;
 }
-.feedbackUser img{
+.feedbackUser img {
   border-radius: 50%;
 }
-.feedbackUser h3{
+.feedbackUser h3 {
   width: 169px;
   font-weight: 400;
   line-height: 28px; /*29.4-27*/
   font-size: calc(0.3vw + 16.752px); /*21-18*/
 }
 
+/* Немного о нас */
+.aboutUsTitle {
+  margin-bottom: calc(5.1vw + 14.7px); /*80-34*/
+}
+.aboutUsInfo img {
+  width: 110px;
+  margin-bottom: calc(2.2vw + 11.681px); /*40-20*/
+}
+.aboutUsInfo h3 {
+  font-size: calc(0.6vw + 20px); /*27-22*/
+  width: calc(11.8vw + 287px); /*426-328*/
+  font-weight: 550;
+  line-height: 140%;
+  text-transform: uppercase; /*только при большом экране*/
+}
+.aboutUsWrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 40px 97px;
+}
+.aboutUsCard {
+  display: flex;
+  flex-direction: column;
+  gap: calc(1.1vw + 25.841px) /*40-30*/ 0;
+  justify-content: center;
+  width: calc(14.7vw + 272px); /*461-328*/
+}
+.aboutUsCardInfo h4 {
+  font-size: calc(2.7vw + 24px); /*58-34*/
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.aboutUsCardInfo p {
+  font-size: calc(0.6vw + 14px); /*21-16*/
+  font-weight: 400;
+}
+
 /* Все еще сомневаешься? */
-.finishingTitle{
+.finishingTitle {
   font-size: calc(2.7vw + 24px); /*58-34*/
   width: calc(58.3vw + 108.8px); /*855-328*/
   margin-bottom: 16px;
   line-height: calc(2.3vw + 31.232px); /*61.25-40.05*/
 }
-.finishingInfo{
-font-size: calc(1vw + 14.257px); /*27-18*/
-width: calc(46.5vw + 153px); /*723-328*/
-margin-bottom: 20px;
+.finishingInfo {
+  font-size: calc(1vw + 14.257px); /*27-18*/
+  width: calc(46.5vw + 153px); /*723-328*/
+  margin-bottom: 20px;
 }
-.finishingCard{
+.finishingCard {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.finishingCard img{
-  width: 507px;
+.finishingCard img {
+  width: 100%;
 }
-.finishing .splide__list {
+/* .finishing .splide__list {
   display: flex;
   flex-wrap: nowrap;
-  overflow: hidden; /* Обрезает содержимое за пределами контейнера */
-  gap: 40px; /* Установите отступ между слайдами */
-}
+  overflow: hidden;  Обрезает содержимое за пределами контейнера 
+  gap: 40px; Установите отступ между слайдами 
+} */
 
 /*а кто преподает?*/
 .legendText {
@@ -334,12 +348,7 @@ margin-bottom: 20px;
   /* flex-wrap: wrap; */
   /* width: 1220px; */
 }
-@media (max-width: 900px) {
-  .legendWrapper {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
+
 .legend {
   flex-basis: 400px;
   flex-grow: 1;
@@ -389,30 +398,6 @@ margin-bottom: 20px;
 .card img {
   margin-bottom: 10px;
 }
-@media (max-width: 1000px) {
-  .legendCards {
-    grid-template-areas:
-      "smile keyboard"
-      "cup bag";
-  }
-  .legend {
-    display: flex;
-    justify-content: center;
-  }
-  .legendInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media (max-width: 875px) {
-  .primary.desc {
-    display: none;
-  }
-  .primary.mob {
-    display: block;
-  }
-}
 
 /*диплом об окончании курса*/
 .diplomGrid {
@@ -440,26 +425,6 @@ margin-bottom: 20px;
   line-height: calc(1.4vw 20px); /*37.8-25.2*/
   font-weight: 400;
   grid-area: info;
-}
-@media (max-width: 1100px) {
-  .diplomGrid {
-    grid-template: 1fr / 1fr;
-    grid-template-areas:
-      "title"
-      "img"
-      "info";
-  }
-  .diplomImg {
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 875px) {
-  .primary.desc {
-    display: none;
-  }
-  .primary.mob {
-    display: block;
-  }
 }
 
 /*таймер:*/
@@ -513,61 +478,61 @@ footer {
 .footerLeft h2 {
   color: #fff;
 }
-.infoLetf{
-display: flex;
-flex-direction: column;
-gap: 24px 0;
-}
-.infoLetf div{
+.infoLetf {
   display: flex;
-  align-items:center;
+  flex-direction: column;
+  gap: 24px 0;
+}
+.infoLetf div {
+  display: flex;
+  align-items: center;
   gap: 0 20px;
 }
-.infoLetf div p{
+.infoLetf div p {
   color: #fff;
   font-size: calc(1vw + 14.257px); /*27-18*/
   width: calc(13.5vw + 277.257px); /*450-328*/
 }
 
-.footerRight{
+.footerRight {
   width: 50%;
-  padding-top: calc(1.3vw + 83px) /*100-0*/ ;
+  padding-top: calc(1.3vw + 83px) /*100-0*/;
 }
-.footerForm{
+.footerForm {
   background-color: #fff;
   border-radius: 12px;
-  padding: 60px calc(3.3vw + 17.5px) ;
+  padding: 60px calc(3.3vw + 17.5px);
   width: calc(16.4vw + 265px); /*475-327*/
   text-align: center;
   position: relative;
 }
-.footerForm h3{
+.footerForm h3 {
   font-size: calc(0.4vw + 24px);
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.footerForm p{
+.footerForm p {
   font-size: calc(0.6vw + 14px); /*21-16*/
   margin-bottom: 30px;
-  color:gray;
+  color: gray;
   text-transform: lowercase;
   line-height: calc(1.4vw + 19.959px); /*37.8-25.2*/
 }
-.footerForm input{
+.footerForm input {
   display: block;
   width: 100%;
   border: 0;
-  border-bottom: 1px solid #A1A1A16B;
+  border-bottom: 1px solid #a1a1a16b;
   padding-bottom: 10px;
   margin-bottom: 23px;
   outline: none;
-  color:#0000002B;
+  color: #0000002b;
 }
-.footerForm .primary{
-margin-bottom: 40px;
-width: calc(6.7vw + 241px); /*328-268*/
+.footerForm .primary {
+  margin-bottom: 40px;
+  width: calc(6.7vw + 241px); /*328-268*/
 }
-.footerRight span{
+.footerRight span {
   font-size: 18px;
   display: block;
   color: grey;
@@ -575,13 +540,13 @@ width: calc(6.7vw + 241px); /*328-268*/
   font-weight: bold;
   margin-bottom: 10px;
 }
-.footerForm p:nth-child(5){
+.footerForm p:nth-child(5) {
   font-size: 18px;
   color: gray;
   text-transform: lowercase;
   line-height: 21.2px;
 }
-.sale{
+.sale {
   width: calc(6vw + 82px); /*159-105*/
   height: calc(6vw + 82px);
   background-color: #6e3aba;
@@ -597,13 +562,9 @@ width: calc(6.7vw + 241px); /*328-268*/
   top: -80px;
   /* margin-top: 49px; */
 }
-@media(max-width: 975px){
-  footer{
-    flex-direction: column;
-    /* align-items: center; */
-    /* gap: 88px 0; */
-  }
-}
+
+/*footer end*/
+
 @media (max-width: 875px) {
   .primary.desc {
     display: none;
@@ -611,12 +572,81 @@ width: calc(6.7vw + 241px); /*328-268*/
   .primary.mob {
     display: block;
   }
-  .sale{
+  .primary.desc {
+    display: none;
+  }
+  .primary.mob {
+    display: block;
+  }
+  .sale {
     right: -30px;
     left: auto;
   }
-  .footerForm input:nth-child(2){
+  .footerForm input:nth-child(2) {
     display: none;
   }
 }
-/*footer end*/
+@media (max-width: 900px) {
+  .studentBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 0;
+    justify-content: center;
+  }
+  .forYouWrapper {
+    grid-template: 1fr / 1fr;
+  }
+  .legendWrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .aboutUsInfo h3 {
+    text-transform: none;
+  }
+  .aboutUsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 975px) {
+  footer {
+    flex-direction: column;
+    /* align-items: center; */
+    /* gap: 88px 0; */
+  }
+}
+@media (max-width: 1000px) {
+  .legendCards {
+    grid-template-areas:
+      "smile keyboard"
+      "cup bag";
+  }
+  .legend {
+    display: flex;
+    justify-content: center;
+  }
+  .legendInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 1100px) {
+  .diplomGrid {
+    grid-template: 1fr / 1fr;
+    grid-template-areas:
+      "title"
+      "img"
+      "info";
+  }
+  .diplomImg {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
